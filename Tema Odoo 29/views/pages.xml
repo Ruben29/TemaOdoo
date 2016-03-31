@@ -24,5 +24,27 @@
             <field name="parent_id" ref="website.main_menu" />
             <field name="sequence" type="int">40</field>
         </record>
+        
+        <template name="Vacaciones page" id="website.vacaciones" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>Vacaciones en Shadow Moses</h1>
+                        <ul class="vacaciones">
+                            <li>
+                                <img src="/Tema Odoo 29/static/img/Fox Hound.jpg"  height="400" width="400"/>
+                                OTACOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON!!!!!!!!!!!!!!!!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </t>
+        </template>
+        <record id="vacaciones_page_link" model="website.menu">
+            <field name="name">Vacaciones</field>
+            <field name="url">/page/vacaciones</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence" type="int">60</field>
+        </record>
     </data>
 </openerp>
