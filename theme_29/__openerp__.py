@@ -1,5 +1,5 @@
 {
-'name':'Odoo´s theme 29',
+'name':'theme_Odoo´s 29',
 'description': 'Temas para examen SXE',
 'category': 'Theme/Creative',
 'sequence': 1000,
