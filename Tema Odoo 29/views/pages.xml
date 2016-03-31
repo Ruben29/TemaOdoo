@@ -18,5 +18,11 @@
                 </div>
             </t>
         </template>
+        <record id="services_page_link" model="website.menu">
+            <field name="name">Services</field>
+            <field name="url">/page/services</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence" type="int">40</field>
+        </record>
     </data>
 </openerp>
