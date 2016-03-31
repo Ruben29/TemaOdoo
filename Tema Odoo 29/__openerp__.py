@@ -1,9 +1,13 @@
-#!/usr/bin/env python2
-#encoding: UTF-8
-
-# To change this license header, choose License Headers in Project Properties.
-# To change this template file, choose Tools | Templates
-# and open the template in the editor.
-
-if __name__ == "__main__":
-    print "Hello World"
+{
+'name':'Odoo´s theme 29',
+'description': 'Temas para examen SXE',
+'category': 'Theme/Creative',
+'sequence': 1000,
+'version': '1.0',
+'author': 'O Vintenove',
+'depends': ['website'],
+'data': [
+'views/layout.xml',
+'views/pages.xml','views/assets.xml'
+],
+}
