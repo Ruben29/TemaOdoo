@@ -32,7 +32,7 @@
                         <h1>Vacaciones en Shadow Moses</h1>
                         <ul class="vacaciones">
                             <li>
-                                <img src="/Tema Odoo 29/static/img/Fox Hound.jpg"  height="400" width="400"/>
+                                <img src="/theme_29/static/img/Fox Hound.jpg"  height="400" width="400"/>
                                 OTACOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON!!!!!!!!!!!!!!!!
                             </li>
                         </ul>
@@ -45,6 +45,41 @@
             <field name="url">/page/vacaciones</field>
             <field name="parent_id" ref="website.main_menu" />
             <field name="sequence" type="int">60</field>
+        </record>
+        
+        <template name="QuienesSomos page" id="website.quienessomos" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>Quienes Somos</h1>
+                        <ul class="quienessomos">
+                            <li>
+                                <h4>1º</h4><h3>El que más manda</h3>
+                                <img src="/theme_29/static/img/Big Boss.jpg"  height="200" width="200"/>
+                                <h4>Big Boss</h4>
+                            </li>
+                            <li>
+                                <h4>2º</h4><h3>El que despide</h3>
+                                <img src="/theme_29/static/img/Ocelot.jpg"  height="200" width="200"/>
+                                <h4>Revolver Ocelot "Shalashaska"</h4>
+                            </li>
+                            <li>
+                                <h4>3º</h4><h3>El que entrena</h3>
+                                <img src="/theme_29/static/img/Miller.jpg"  height="200" width="200"/>
+                                <h4>Kazuhira Miller "Master"</h4>
+                            </li>
+                        </ul>
+                        <!-- === Snippets' area === -->
+                        <div class="oe_structure" />
+                    </div>
+                </div>
+            </t>
+        </template>
+        <record id="quienessomos_page_link" model="website.menu">
+            <field name="name">Quienes Somos</field>
+            <field name="url">/page/quienessomos</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence" type="int">80</field>
         </record>
     </data>
 </openerp>
